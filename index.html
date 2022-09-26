@@ -180,7 +180,7 @@
       width: 100px;
       height: 100px;
       background-color: transparent;
-      rotate: calc(var(--a) * 45deg);
+      transform: rotate(calc(var(--a) * 45deg));
       animation: rotate 2s linear infinite;
       -webkit-animation: rotate 2s linear infinite;
     }
@@ -194,11 +194,11 @@
 
     @keyframes rotate {
       0% {
-        rotate: calc(var(--a) * 45deg);
+        transform: rotate(calc(var(--a) * 45deg));
       }
 
       100% {
-        rotate: calc(-360deg + calc(var(--a) * 45deg));
+        transform: rotate(calc(-360deg + calc(var(--a) * 45deg)));
       }
     }
 
